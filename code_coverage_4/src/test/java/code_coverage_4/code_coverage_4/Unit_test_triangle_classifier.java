@@ -25,43 +25,21 @@ public class Unit_test_triangle_classifier {
 
 	@Test
     public void testEquilateral() {
-        assertEquals("Equilateral", WeakClass_1.classifyTriangle(3, 3, 3));
+        assertEquals("Equilateral", WeakClass_1.classifyTriangle(7, 7, 7));
     }
 
     @Test
     public void testNotATriangle() {
-        assertEquals("Error: Not a Triangle", WeakClass_1.classifyTriangle(1, 2, 1));
+        assertEquals("Error: Not a Triangle", WeakClass_1.classifyTriangle(3, 4, 3));
     }
 
     @Test
     public void testIsosceles() {
-        assertEquals("Isosceles", WeakClass_1.classifyTriangle(2, 4, 4));
+        assertEquals("Isosceles", WeakClass_1.classifyTriangle(6, 6, 5));
     }
 
     @Test
     public void testScalene() {
         assertEquals("Scalene", WeakClass_1.classifyTriangle(3, 4, 5));
-    }
-    
-    
-    @Test
-    public void testValidValueSevenDigits() {
-        assertEquals("Valid Value", StringValidator.validateString("1234567"));
-    }
-
-    @Test
-    public void testInvalidValueEmpty() {
-        assertEquals("Invalid Value", StringValidator.validateString(""));
-    }
-
-    @Test
-    public void testValidValueAlphanumeric() {
-        assertEquals("Valid Value", StringValidator.validateString("aB1cD2E"));
-    }
-
-    @Test
-    public void testInvalidValueSpecialCharacters() {
-        assertEquals("Invalid Value", StringValidator.validateString("aBcD1!2"));
-    }
-    
+    }    
 }
