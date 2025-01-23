@@ -15,11 +15,10 @@ public class unit_test_Power_calculator {
 			double b = invocation.getArgument(1);
 			return a * b;
 		});
-		double a = 4.0, b = 2.0;	
+		double a = 4.0, b = 2.0;
 		double expected_result = 16.0;
 		double actual_result = power_calculator.power(a, b);
 		assertEquals(expected_result, actual_result);
 		System.out.println(actual_result);
-
 	}
 }

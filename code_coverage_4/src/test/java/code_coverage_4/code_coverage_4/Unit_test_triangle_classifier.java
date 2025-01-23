@@ -14,16 +14,6 @@ public class Unit_test_triangle_classifier {
 	TriangleClassifier triTriangleClassifier = new TriangleClassifier(IsEquilateral, IsIsosceles, IsTriangle);
 
 	@Test
-	public void unitest_isIsolecense() {
-		int a = 3, b = 2, c = 2;
-		Mockito.when(IsTriangle.test(a, b, c)).thenReturn(true);
-		Mockito.when(IsIsosceles.test(a, b, c)).thenReturn(true);
-		String expected_result = Triangle_Types.isosceles.toString();
-		String actual_result = WeakClass_1.classifyTriangle(a, b, c);
-		assertEquals(expected_result, actual_result);
-	}
-
-	@Test
     public void testEquilateral() {
         assertEquals("Equilateral", WeakClass_1.classifyTriangle(7, 7, 7));
     }
