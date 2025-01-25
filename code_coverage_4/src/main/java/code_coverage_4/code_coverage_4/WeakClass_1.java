@@ -3,8 +3,8 @@ package code_coverage_4.code_coverage_4;
 public class WeakClass_1 {
 	
 	enum Triangle_Types {
-	    equilateral,
-	    isosceles,
+		Equilateral,
+		Isosceles,
 	    Scalene,
 	    Nottriangle,
 	    ERROR
@@ -23,15 +23,15 @@ public class WeakClass_1 {
 	    }
 	    // Check if it is an Equilateral triangle
 	    else if (a == b && b == c) {
-	        triangle = Triangle_Types.equilateral;
+	        triangle = Triangle_Types.Equilateral;
 	    }
 	    // Check if it is an Isosceles triangle
 	    else if (a == b) {
-	        triangle = Triangle_Types.isosceles;
+	        triangle = Triangle_Types.Isosceles;
 	    } else if (b == c) {
-	        triangle = Triangle_Types.isosceles;
+	        triangle = Triangle_Types.Isosceles;
 	    } else if (a == c) {
-	        triangle = Triangle_Types.isosceles;
+	        triangle = Triangle_Types.Isosceles;
 	    }
 	    // If none of the above, it is a Scalene triangle
 	    else {

@@ -1,6 +1,6 @@
 package code_coverage_4.code_coverage_4;
 
-import static org.junit.Assert.assertEquals; 
+import static org.junit.Assert.assertEquals;  
 
 import org.junit.Test;
 import org.mockito.Mockito;
