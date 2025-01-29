@@ -10,6 +10,15 @@ public class WeakClass_1 {
 	    ERROR
 	}
 
+	public  int weakMethod1(int x, int y) {
+		int c = x / y;
+		if(c > 0)
+			return 1;
+		else
+			return -1;
+		
+	}
+	
 	public static String classifyTriangle(int a, int b, int c) {
 	    Triangle_Types triangle;
 

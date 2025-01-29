@@ -8,7 +8,8 @@ import org.mockito.Mockito;
 public class unit_test_Power_calculator {
 	Multiplier multiplier = Mockito.mock(Multiplier.class);
 	Power_calculator power_calculator = new Power_calculator(multiplier);
-@Test
+
+	@Test
 	public void unitest_multiplier_1() {
 		Mockito.when(multiplier.multiply(Mockito.anyDouble(), Mockito.anyDouble())).thenAnswer(invocation -> {
 			double a = invocation.getArgument(0);
@@ -18,7 +19,7 @@ public class unit_test_Power_calculator {
 		double a = 4.0, b = 2.0;
 		double expected_result = 16.0;
 		double actual_result = power_calculator.power(a, b);
-		assertEquals(expected_result, actual_result);
+		assertEquals(expected_result, actual_result, 0.001);
 		System.out.println(actual_result);
 	}
 }
