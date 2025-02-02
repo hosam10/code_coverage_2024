@@ -20,7 +20,7 @@ public class Unit_test_triangle_classifier {
 
     @Test
     public void testNotATriangle() {
-        assertEquals("Error: Not a Triangle", WeakClass_1.classifyTriangle(3, 4, 3));
+        assertEquals("ERROR", WeakClass_1.classifyTriangle(0, 4, 3));
     }
 
     @Test

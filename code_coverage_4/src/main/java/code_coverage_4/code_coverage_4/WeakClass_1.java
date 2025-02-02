@@ -22,6 +22,12 @@ public class WeakClass_1 {
 	public static String classifyTriangle(int a, int b, int c) {
 	    Triangle_Types triangle;
 
+        // Check for negative or zero inputs
+        if (a <= 0 || b <= 0 || c <= 0) {
+            triangle = Triangle_Types.ERROR;
+            return triangle.toString();
+        }
+        
 	    // Check if it is NOT a triangle
 	    if (c >= a + b) {
 	        triangle = Triangle_Types.Nottriangle;
